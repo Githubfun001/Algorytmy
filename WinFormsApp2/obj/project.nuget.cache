@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YixdwxKintK2cYJ+qyUOGq/Bj4rE6lIKv82EPFxZAXOp4etnEFw1O3PDrlqcuV1/qgHqrpR5k67J3v0zJ33h2A==",
+  "dgSpecHash": "azp47r/h1hLcZSUZy5HCZ0el5HmcjMEZvDiIFLnPNoW9Jrz9c9beiRFknG/bT7mq9M1kf+8zJMu2F8oLW2S7Kw==",
   "success": true,
-  "projectFilePath": "D:\\Zajęcia\\WinFormsApp2\\WinFormsApp2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp2\\WinFormsApp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\timek\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.35\\microsoft.windowsdesktop.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\timek\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.35\\microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\timek\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.35\\microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\timek\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.35\\microsoft.netcore.app.host.win-x64.6.0.35.nupkg.sha512"
+  ],
   "logs": []
 }
