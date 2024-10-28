@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\timek\\.nuget\\packages\\": {}
+    "C:\\Users\\local\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp2\\WinFormsApp2.csproj",
+      "projectUniqueName": "C:\\Users\\local\\Desktop\\Algorytmy-main\\WinFormsApp2\\WinFormsApp2.csproj",
       "projectName": "WinFormsApp2",
-      "projectPath": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp2\\WinFormsApp2.csproj",
-      "packagesPath": "C:\\Users\\timek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp2\\obj\\",
+      "projectPath": "C:\\Users\\local\\Desktop\\Algorytmy-main\\WinFormsApp2\\WinFormsApp2.csproj",
+      "packagesPath": "C:\\Users\\local\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\local\\Desktop\\Algorytmy-main\\WinFormsApp2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\timek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\local\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,11 +40,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -61,24 +56,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.35, 6.0.35]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.35, 6.0.35]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.35, 6.0.35]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.35, 6.0.35]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -87,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

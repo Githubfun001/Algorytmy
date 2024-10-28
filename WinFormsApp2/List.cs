@@ -14,7 +14,7 @@ namespace WinFormsApp2
 
         public void AddFirst(int liczba)
         {
-            Node add = new Node(liczba);
+            Node add = new(liczba);
             if (head == null)
             {
                 this.head = add;
@@ -31,7 +31,7 @@ namespace WinFormsApp2
         
         public void AddLast(int liczba)
         {
-            Node add = new Node(liczba);
+            Node add = new(liczba);
             if (this.tail == null)
             {
                 this.head = add;
@@ -46,42 +46,52 @@ namespace WinFormsApp2
             this.count++;
         }
 
-        public void RemoveFirst()
+        public Node? RemoveFirst()
         {
-            if (this.head != null)
+            if (this.head == null)
+                return null;
+
+            Node wynik;
+
+            if (this.head == this.tail)
             {
-                if (this.head == this.tail)
-                {
-                    this.head = null;
-                    this.tail = null;
-                }
-                else
-                {
-                    this.head = this.head.next;
-                    if(this.head != null)
-                        this.head.prev = null;
-                }
-                this.count--;
+                wynik = this.head;
+                this.head = this.tail = null;
+                this.count = 0;
+                return wynik;
             }
+
+            wynik = this.head;
+            this.head = this.head.next;
+            if(this.head != null)
+                this.head.prev = null;
+            wynik.next = null;
+            this.count--;
+            return wynik;
         }
 
-        public void RemoveLast()
+        public Node? RemoveLast()
         {
-            if (this.tail != null)
+            if (this.tail == null)
+                return null;
+
+            Node wynik;
+
+            if (this.tail == this.head)
             {
-                if (this.tail == this.head)
-                {
-                    this.tail = null;
-                    this.head = null;
-                }
-                else
-                {
-                    this.tail = this.tail.prev;
-                    if(this.tail != null)
-                        this.tail.next = null;
-                }
-                this.count--;
+                wynik = this.head;
+                this.tail = this.head = null;
+                this.count = 0;
+                return wynik;
             }
+
+            wynik = this.tail;
+            this.tail = this.tail.prev;
+            if(this.tail != null)
+                this.tail.next = null;
+            wynik.prev = null;
+            this.count--;
+            return wynik;
         }
 
         public override string ToString()
@@ -90,15 +100,15 @@ namespace WinFormsApp2
                 return "Lista jest pusta";
 
             Node ?current = this.head;
-            StringBuilder str = new System.Text.StringBuilder();
+            string str = "";
 
             while(current != null)
             {
-                str.Append(current.data + " ");
+                str += current.data + " ";
                 current = current.next;
             }
 
-            return str.ToString().TrimEnd();
+            return str.TrimEnd();
         }
     }
 }

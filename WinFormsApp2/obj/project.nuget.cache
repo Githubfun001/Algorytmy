@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "azp47r/h1hLcZSUZy5HCZ0el5HmcjMEZvDiIFLnPNoW9Jrz9c9beiRFknG/bT7mq9M1kf+8zJMu2F8oLW2S7Kw==",
+  "dgSpecHash": "QGaJ1RqWCaC3jJ0rscoc4o1aEK/9ECiPVXs060gW/3FRWHpUDVGA0kgCjQF2gfKBYXkjcbu+4MfcrKbqSGisXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp2\\WinFormsApp2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\timek\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.35\\microsoft.windowsdesktop.app.ref.6.0.35.nupkg.sha512",
-    "C:\\Users\\timek\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.35\\microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
-    "C:\\Users\\timek\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.35\\microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512",
-    "C:\\Users\\timek\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.35\\microsoft.netcore.app.host.win-x64.6.0.35.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\local\\Desktop\\Algorytmy-main\\WinFormsApp2\\WinFormsApp2.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
