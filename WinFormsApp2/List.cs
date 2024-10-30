@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,9 @@ namespace WinFormsApp2
 {
     internal class List
     {
-        public Node ?head;
-        public Node ?tail;
-        public int count=0;
+        public Node? head;
+        public Node? tail;
+        public int count = 0;
 
         public void AddFirst(int liczba)
         {
@@ -28,7 +29,7 @@ namespace WinFormsApp2
             }
             this.count++;
         }
-        
+
         public void AddLast(int liczba)
         {
             Node add = new(liczba);
@@ -63,7 +64,7 @@ namespace WinFormsApp2
 
             wynik = this.head;
             this.head = this.head.next;
-            if(this.head != null)
+            if (this.head != null)
                 this.head.prev = null;
             wynik.next = null;
             this.count--;
@@ -87,7 +88,7 @@ namespace WinFormsApp2
 
             wynik = this.tail;
             this.tail = this.tail.prev;
-            if(this.tail != null)
+            if (this.tail != null)
                 this.tail.next = null;
             wynik.prev = null;
             this.count--;
@@ -96,13 +97,13 @@ namespace WinFormsApp2
 
         public override string ToString()
         {
-            if (this.head == null) 
+            if (this.head == null)
                 return "Lista jest pusta";
 
-            Node ?current = this.head;
+            Node? current = this.head;
             string str = "";
 
-            while(current != null)
+            while (current != null)
             {
                 str += current.data + " ";
                 current = current.next;

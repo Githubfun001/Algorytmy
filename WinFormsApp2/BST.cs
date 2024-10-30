@@ -8,14 +8,14 @@ namespace WinFormsApp2
 {
     internal class BST
     {
-        public NodeT ?root;
-    }
+        public NodeT? root;
 
-    public void Add(int liczba)
-    {
-        NodeT add = new(liczba);
-        if (this.root == null)
-            this.root = add;
+        public void AddNodeT(int liczba)
+        {
+            NodeT add = new(liczba);
+            if (this.root == null)
+                this.root = add;
 
+        }
     }
 }

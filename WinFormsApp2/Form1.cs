@@ -2,15 +2,66 @@ namespace WinFormsApp2
 {
     public partial class Form1 : Form
     {
-        private List lista = new();
+        private List list = new List();
         public Form1()
         {
             InitializeComponent();
         }
+        private void UpdateDisplay()
+        {
+            label1.Text = list.ToString();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (int.TryParse(textBox1.Text, out int liczba))
+            {
+                list.AddFirst(liczba);
+                UpdateDisplay();
+            }
+            else
+            {
+                MessageBox.Show("Enter a valid integer.");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int liczba))
+            {
+                list.AddLast(liczba);
+                UpdateDisplay();
+            }
+            else
+            {
+                MessageBox.Show("Enter a valid integer.");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var removedNode = list.RemoveFirst();
+            if (removedNode != null)
+            {
+                UpdateDisplay();
+            }
+            else
+            {
+                MessageBox.Show("The list is already empty.");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var removedNode = list.RemoveLast();
+            if (removedNode != null)
+            {
+                UpdateDisplay();
+            }
+            else
+            {
+                MessageBox.Show("The list is already empty.");
+            }
         }
     }
 }
