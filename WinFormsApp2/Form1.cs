@@ -21,7 +21,7 @@ namespace WinFormsApp2
             }
             else
             {
-                MessageBox.Show("Enter a valid integer.");
+                MessageBox.Show("Podaj liczbê ca³kowit¹.");
             }
         }
 
@@ -34,33 +34,33 @@ namespace WinFormsApp2
             }
             else
             {
-                MessageBox.Show("Enter a valid integer.");
+                MessageBox.Show("Podaj liczbê ca³kowit¹.");
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var removedNode = list.RemoveFirst();
+            Node? removedNode = list.RemoveFirst();
             if (removedNode != null)
             {
                 UpdateDisplay();
             }
             else
             {
-                MessageBox.Show("The list is already empty.");
+                MessageBox.Show("Lista jest pusta.");
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var removedNode = list.RemoveLast();
+            Node? removedNode = list.RemoveLast();
             if (removedNode != null)
             {
                 UpdateDisplay();
             }
             else
             {
-                MessageBox.Show("The list is already empty.");
+                MessageBox.Show("Lista jest pusta.");
             }
         }
     }
