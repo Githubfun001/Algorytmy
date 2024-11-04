@@ -27,15 +27,97 @@ namespace WinFormsApp2
             else
                 rodzic.prawe = dziecko;
         }
+
         /*
-        public NodeT Remove(int liczba)
-        {
-            1) Gdy węzeł nie am dzieci - odwiązujemy (w dwóch kierunkach), zwracamy węzeł
-            2) Gdy węzeł ma jedno dziecko - w miejsce rodzica wpada mniejsze dziecko
-            3) Gdy węzeł ma 2 dzieci - z prawego poddrzewa wybieramy element najmniejszy, 
-                                        odpinamy i wstawiamy w miejsce węzła kasowanego
-        }
+        1) Gdy węzeł nie am dzieci - odwiązujemy (w dwóch kierunkach), zwracamy węzeł
+        2) Gdy węzeł ma jedno dziecko - w miejsce rodzica wpada mniejsze dziecko
+        3) Gdy węzeł ma 2 dzieci - z prawego poddrzewa wybieramy element najmniejszy, 
+                                    odpinamy i wstawiamy w miejsce węzła kasowanego
         */
+
+        public void RemoveElement(NodeT n)
+        {
+            switch(n.liczbaDzieci())
+            {
+                case 0:
+                    this.RemoveElement0(n);
+
+                    break;
+
+                case 1:                    
+                    NodeT? dziecko = this.RemoveElement1(n);
+                    NodeT? rodzic = n.rodzic;
+                    this.RemoveElement0(n);
+
+                    if (dziecko != null && rodzic != null)
+                    {
+                        if (rodzic == n)
+                            rodzic.PołączPrawe(dziecko);
+                        else
+                            rodzic.PołączLewe(dziecko);
+                    }
+                    break;
+
+                case 2:
+                    NodeT? tmp = Min(n.prawe);
+
+                    this.RemoveElement(tmp);
+
+                    tmp.rodzic = n.rodzic;
+                    n.rodzic = null;
+
+                    tmp.lewe = n.lewe;
+                    n.lewe = null;
+
+                    tmp.prawe = n.prawe;
+                    n.prawe = null;
+
+                    break;
+            }
+        }
+
+
+        private void RemoveElement0(NodeT? n)
+        {
+            if (n == null)
+                return;
+
+            if (this.root == n)
+                this.root = null;
+            else
+            {
+                if (n.rodzic.lewe == n)
+                    n.rodzic.lewe = null;
+                else if (n.rodzic.prawe == n)
+                    n.rodzic.prawe = null;
+                n.rodzic = null;
+            }
+        }
+
+        private NodeT? RemoveElement1(NodeT n)
+        {
+            NodeT? dziecko = null;
+
+            if (n.lewe != null)
+                dziecko = n.lewe;
+
+            else if (n.prawe != null)
+                dziecko = n.prawe;
+
+            this.RemoveElement0(dziecko);
+            return dziecko;
+        }
+
+        private static NodeT Min(NodeT n)
+        {
+            NodeT current = n;
+            while (current.lewe != null)
+                current = current.lewe;
+            return current;
+        }
+
+        
+
         private NodeT SzukajRodzica(NodeT dziecko)
         {
             if (root == null)
@@ -61,7 +143,7 @@ namespace WinFormsApp2
             }
         }
 
-        public void CPD(NodeT węzeł)
+        public void CPD(NodeT? węzeł)
         {   //przykład drzewa     8
             //                3       9
             //             1     4

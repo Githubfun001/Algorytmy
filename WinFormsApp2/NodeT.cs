@@ -17,5 +17,29 @@ namespace WinFormsApp2
         {
             this.data = liczba;
         }
+
+        public int liczbaDzieci()
+        {
+            int wynik = 0;
+            if (this.lewe != null)
+                wynik++;
+            if (this.prawe != null)
+                wynik++;
+            return wynik;
+        }
+
+        public void PołączLewe(NodeT dziecko)
+        {
+            this.lewe = dziecko;
+            if(dziecko != null)
+                dziecko.rodzic = this;
+        }
+
+        public void PołączPrawe(NodeT dziecko)
+        {
+            this.prawe = dziecko;
+            if (dziecko != null)
+                dziecko.rodzic = this;
+        }
     }
 }
