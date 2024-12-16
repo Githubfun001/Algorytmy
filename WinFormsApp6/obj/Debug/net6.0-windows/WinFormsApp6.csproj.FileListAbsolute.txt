@@ -1,0 +1,17 @@
+D:\Zajęcia\WinFormsApp6\bin\Debug\net6.0-windows\WinFormsApp6.exe
+D:\Zajęcia\WinFormsApp6\bin\Debug\net6.0-windows\WinFormsApp6.deps.json
+D:\Zajęcia\WinFormsApp6\bin\Debug\net6.0-windows\WinFormsApp6.runtimeconfig.json
+D:\Zajęcia\WinFormsApp6\bin\Debug\net6.0-windows\WinFormsApp6.dll
+D:\Zajęcia\WinFormsApp6\bin\Debug\net6.0-windows\WinFormsApp6.pdb
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.csproj.AssemblyReference.cache
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.Form1.resources
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.csproj.GenerateResource.cache
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.GeneratedMSBuildEditorConfig.editorconfig
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.AssemblyInfoInputs.cache
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.AssemblyInfo.cs
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.csproj.CoreCompileInputs.cache
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.dll
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\refint\WinFormsApp6.dll
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.pdb
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\WinFormsApp6.genruntimeconfig.cache
+D:\Zajęcia\WinFormsApp6\obj\Debug\net6.0-windows\ref\WinFormsApp6.dll
