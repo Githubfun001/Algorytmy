@@ -10,6 +10,13 @@ namespace WinFormsApp5
     {
         public NodeG1 start;
         public NodeG1 end;
-        int weight;
+        public int weight;
+
+        public Edge(NodeG1 start, NodeG1 end, int weight)
+        {
+            this.start = start;
+            this.end = end;
+            this.weight = weight;
+        }
     }
 }

@@ -8,6 +8,11 @@ namespace WinFormsApp5
 {
     internal class NodeG1
     {
-        int data;
+        public int data;
+
+        public NodeG1(int data)
+        {
+            this.data = data;
+        }
     }
 }
