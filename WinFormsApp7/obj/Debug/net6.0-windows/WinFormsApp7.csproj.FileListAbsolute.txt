@@ -1,0 +1,17 @@
+D:\Zajęcia\WinFormsApp7\bin\Debug\net6.0-windows\WinFormsApp7.exe
+D:\Zajęcia\WinFormsApp7\bin\Debug\net6.0-windows\WinFormsApp7.deps.json
+D:\Zajęcia\WinFormsApp7\bin\Debug\net6.0-windows\WinFormsApp7.runtimeconfig.json
+D:\Zajęcia\WinFormsApp7\bin\Debug\net6.0-windows\WinFormsApp7.dll
+D:\Zajęcia\WinFormsApp7\bin\Debug\net6.0-windows\WinFormsApp7.pdb
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.csproj.AssemblyReference.cache
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.Form1.resources
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.csproj.GenerateResource.cache
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.AssemblyInfoInputs.cache
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.AssemblyInfo.cs
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.csproj.CoreCompileInputs.cache
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.dll
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\refint\WinFormsApp7.dll
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.pdb
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\WinFormsApp7.genruntimeconfig.cache
+D:\Zajęcia\WinFormsApp7\obj\Debug\net6.0-windows\ref\WinFormsApp7.dll
