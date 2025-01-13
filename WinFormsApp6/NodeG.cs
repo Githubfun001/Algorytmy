@@ -8,9 +8,9 @@ namespace WinFormsApp6
 {
     internal class NodeG
     {
-        public NodeGS lewe;
-        public NodeGS prawe;
-        public NodeGS rodzic;
+        public NodeG lewe;
+        public NodeG prawe;
+        public NodeG rodzic;
         public int data;
 
         public NodeG(int data)
