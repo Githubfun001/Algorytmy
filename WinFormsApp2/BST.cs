@@ -46,16 +46,7 @@ namespace WinFormsApp2
 
                 case 1:                    
                     NodeT? dziecko = this.RemoveElement1(n);
-                    NodeT? rodzic = n.rodzic;
-                    this.RemoveElement0(n);
 
-                    if (dziecko != null && rodzic != null)
-                    {
-                        if (rodzic == n)
-                            rodzic.PołączPrawe(dziecko);
-                        else
-                            rodzic.PołączLewe(dziecko);
-                    }
                     break;
 
                 case 2:
@@ -63,14 +54,7 @@ namespace WinFormsApp2
 
                     this.RemoveElement(tmp);
 
-                    tmp.rodzic = n.rodzic;
-                    n.rodzic = null;
-
-                    tmp.lewe = n.lewe;
-                    n.lewe = null;
-
-                    tmp.prawe = n.prawe;
-                    n.prawe = null;
+                    n.data = tmp.data;
 
                     break;
             }
@@ -104,7 +88,22 @@ namespace WinFormsApp2
             else if (n.prawe != null)
                 dziecko = n.prawe;
 
-            this.RemoveElement0(dziecko);
+            if (n == root)
+            {
+                root = dziecko;
+            }
+            else
+            {
+                // Przypisz dziecko do rodzica usuwanego węzła
+                if (n.rodzic.lewe == n)
+                    n.rodzic.lewe = dziecko;
+                else
+                    n.rodzic.prawe = dziecko;
+            }
+
+            // Ustaw nowego rodzica dla dziecka
+            if (dziecko != null)
+                dziecko.rodzic = n.rodzic;
             return dziecko;
         }
 

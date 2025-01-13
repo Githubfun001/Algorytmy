@@ -28,92 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            button1 = new Button();
+            label1 = new Label();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            textBox1 = new TextBox();
+            button5 = new Button();
+            button6 = new Button();
+            label2 = new Label();
+            textBox2 = new TextBox();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(224, 50);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Dodaj z przodu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(12, 67);
+            button1.Name = "button1";
+            button1.Size = new Size(127, 40);
+            button1.TabIndex = 0;
+            button1.Text = "Dodaj z przodu";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(71, 151);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            label1.AutoSize = true;
+            label1.Location = new Point(77, 134);
+            label1.Name = "label1";
+            label1.Size = new Size(78, 20);
+            label1.TabIndex = 2;
+            label1.Text = "Linked List";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(401, 50);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Dodaj z tyłu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(156, 67);
+            button2.Name = "button2";
+            button2.Size = new Size(135, 40);
+            button2.TabIndex = 3;
+            button2.Text = "Dodaj z tyłu";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(107, 249);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 34);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Usuń z przodu";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Location = new Point(12, 191);
+            button3.Name = "button3";
+            button3.Size = new Size(137, 45);
+            button3.TabIndex = 4;
+            button3.Text = "Usuń z przodu";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(321, 249);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 34);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Usuń z tyłu";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Location = new Point(170, 191);
+            button4.Name = "button4";
+            button4.Size = new Size(139, 45);
+            button4.TabIndex = 5;
+            button4.Text = "Usuń z tyłu";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 57);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 23);
-            this.textBox1.TabIndex = 6;
+            textBox1.Location = new Point(44, 25);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 6;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(653, 142);
+            button5.Name = "button5";
+            button5.Size = new Size(94, 29);
+            button5.TabIndex = 7;
+            button5.Text = "Dodaj";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(653, 265);
+            button6.Name = "button6";
+            button6.Size = new Size(94, 29);
+            button6.TabIndex = 8;
+            button6.Text = "Usun";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(689, 203);
+            label2.Name = "label2";
+            label2.Size = new Size(34, 20);
+            label2.TabIndex = 9;
+            label2.Text = "BST";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(624, 86);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(125, 27);
+            textBox2.TabIndex = 12;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 338);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 451);
+            Controls.Add(textBox2);
+            Controls.Add(label2);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(textBox1);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -124,5 +161,9 @@
         private Button button3;
         private Button button4;
         private TextBox textBox1;
+        private Button button5;
+        private Button button6;
+        private Label label2;
+        private TextBox textBox2;
     }
 }
