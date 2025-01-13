@@ -58,9 +58,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(330, 112);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(103, 20);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "Wczytany Graf";
             // 
             // Form1
             // 

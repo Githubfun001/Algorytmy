@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj": {}
+    "C:\\Users\\timek\\Desktop\\Algorytmy-main\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj": {
+    "C:\\Users\\timek\\Desktop\\Algorytmy-main\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj",
+        "projectUniqueName": "C:\\Users\\timek\\Desktop\\Algorytmy-main\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj",
         "projectName": "WinFormsApp4",
-        "projectPath": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj",
+        "projectPath": "C:\\Users\\timek\\Desktop\\Algorytmy-main\\WinFormsApp4\\WinFormsApp4\\WinFormsApp4.csproj",
         "packagesPath": "C:\\Users\\timek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\timek\\Desktop\\Filip\\WinFormsApp4\\WinFormsApp4\\obj\\",
+        "outputPath": "C:\\Users\\timek\\Desktop\\Algorytmy-main\\WinFormsApp4\\WinFormsApp4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\timek\\AppData\\Roaming\\NuGet\\NuGet.Config",
