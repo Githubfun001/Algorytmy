@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form1
+    partial class SortingAlgorithms
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,7 +38,7 @@
             button7 = new Button();
             randomNumberCount = new NumericUpDown();
             userInput = new TextBox();
-            label1 = new Label();
+            timeDisplay = new Label();
             ((System.ComponentModel.ISupportInitialize)randomNumberCount).BeginInit();
             SuspendLayout();
             // 
@@ -79,7 +79,7 @@
             button3.TabIndex = 4;
             button3.Text = "BubbleSort";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            button3.Click += BubbleSortButton;
             // 
             // button4
             // 
@@ -89,7 +89,7 @@
             button4.TabIndex = 5;
             button4.Text = "InsertionSort";
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button4.Click += InsertionSortButton;
             // 
             // button5
             // 
@@ -99,7 +99,7 @@
             button5.TabIndex = 6;
             button5.Text = "MergeSort";
             button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            button5.Click += MergeSortButton;
             // 
             // button6
             // 
@@ -109,7 +109,7 @@
             button6.TabIndex = 7;
             button6.Text = "CountingSort";
             button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            button6.Click += CountingSortButton;
             // 
             // button7
             // 
@@ -119,7 +119,7 @@
             button7.TabIndex = 8;
             button7.Text = "QuickSort";
             button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click;
+            button7.Click += QuickSortButton;
             // 
             // randomNumberCount
             // 
@@ -137,19 +137,19 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(129, 513);
-            label1.Name = "label1";
-            label1.Size = new Size(247, 20);
-            label1.TabIndex = 12;
-            label1.Text = "Time elapsed will be displayed here";
+            timeDisplay.AutoSize = true;
+            timeDisplay.Location = new Point(129, 513);
+            timeDisplay.Name = "label1";
+            timeDisplay.Size = new Size(247, 20);
+            timeDisplay.TabIndex = 12;
+            timeDisplay.Text = "Time elapsed will be displayed here";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1051, 597);
-            Controls.Add(label1);
+            Controls.Add(timeDisplay);
             Controls.Add(userInput);
             Controls.Add(randomNumberCount);
             Controls.Add(button7);
@@ -160,8 +160,8 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(numberDisplay);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Sorting Algorithms";
+            Text = "Sorting Algorithms";
             ((System.ComponentModel.ISupportInitialize)randomNumberCount).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -178,6 +178,6 @@
         private Button button7;
         private NumericUpDown randomNumberCount;
         private TextBox userInput;
-        private Label label1;
+        private Label timeDisplay;
     }
 }

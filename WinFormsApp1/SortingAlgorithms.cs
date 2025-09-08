@@ -2,12 +2,12 @@
 
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class SortingAlgorithms : Form
     {
         Random random = new Random();
         private int[] currentNumbers;
 
-        public Form1()
+        public SortingAlgorithms()
         {
             InitializeComponent();
 
@@ -69,23 +69,23 @@ namespace WinFormsApp1
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void BubbleSortButton(object sender, EventArgs e)
         {
             SortAndMeasureTime(BubbleSort, "Bubble Sort");
         }
-        private void button4_Click(object sender, EventArgs e)
+        private void InsertionSortButton(object sender, EventArgs e)
         {
             SortAndMeasureTime(InsertionSort, "Insertion Sort");
         }
-        private void button5_Click(object sender, EventArgs e)
+        private void MergeSortButton(object sender, EventArgs e)
         {
             SortAndMeasureTime(MergeSort, "Merge Sort");
         }
-        private void button6_Click(object sender, EventArgs e)
+        private void CountingSortButton(object sender, EventArgs e)
         {
             SortAndMeasureTime(CountingSort, "Counting Sort");
         }
-        private void button7_Click(object sender, EventArgs e)
+        private void QuickSortButton(object sender, EventArgs e)
         {
             SortAndMeasureTime(QuickSort, "Quick Sort");
         }
@@ -103,9 +103,7 @@ namespace WinFormsApp1
             long elapsedTicks = stopwatch.ElapsedTicks;
             double elapsedMilliseconds = (double)elapsedTicks / Stopwatch.Frequency * 1000; // Przeliczenie ticków na ms
 
-
-
-            label1.Text = $"{algorithmName} - Czas sortowania: {elapsedMilliseconds:F3} ms"; // Użyj bardziej precyzyjnego wyniku
+            timeDisplay.Text = $"{algorithmName} - Czas sortowania: {elapsedMilliseconds:F3} ms";
         }
 
         private int[] MergeSort(int[] array)
