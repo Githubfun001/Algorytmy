@@ -91,6 +91,8 @@ namespace WinFormsApp1
         }
         private void SortAndMeasureTime(Func<int[], int[]> sortingAlgorithm, string algorithmName)
         {
+            if (currentNumbers == null || currentNumbers.Length == 0) return;
+
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
@@ -144,14 +146,22 @@ namespace WinFormsApp1
         private int[] BubbleSort(int[] array)
         {
             int n = array.Length;
+            bool flag;
             for (int i = 0; i < n - 1; i++)
+            {
+                flag = false;
                 for (int j = 0; j < n - i - 1; j++)
+                {
                     if (array[j] > array[j + 1])
                     {
                         int tempVar = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = tempVar;
+                        flag = true;
                     }
+                }
+                if (!flag) break;
+            }
             return array;
         }
         private int[] InsertionSort(int[] array)
@@ -173,26 +183,27 @@ namespace WinFormsApp1
         }
         private int[] CountingSort(int[] array)
         {
-            int n = array.Length;
-            // if array > 0
             int max = array.Max();
+            int min = array.Min();
+            int n = max - min + 1;
 
-            int[] countArray = new int[max + 1];
+            int[] countArray = new int[n];
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                countArray[array[i]]++;
+                countArray[array[i] - min]++;
             }
-            for (int i = 1; i <= max; i++)
+            for (int i = 1; i < n; i++)
             {
                 countArray[i] += countArray[i - 1];
             }
-            int[] outputArray = new int[n];
 
-            for (int i = n - 1; i >= 0; i--)
+            int[] outputArray = new int[array.Length];
+
+            for (int i = array.Length - 1; i >= 0; i--)
             {
-                outputArray[countArray[array[i]] - 1] = array[i];
-                countArray[array[i]]--;
+                outputArray[countArray[array[i] - min] - 1] = array[i];
+                countArray[array[i] - min]--;
             }
             return outputArray;
         }
