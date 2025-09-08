@@ -11,32 +11,46 @@ namespace WinFormsApp1
         {
             InitializeComponent();
 
-            numericUpDown1.Minimum = 1;
-            numericUpDown1.Maximum = 1000000;
-            numericUpDown1.Value = 100;
+            randomNumberCount.Minimum = 1;
+            randomNumberCount.Maximum = 1000000;
+            randomNumberCount.Value = 100;
             userInput.PlaceholderText = "eg. 10,5,20,1,19";
         }
         private void UserInputButton(object sender, EventArgs e)
         {
             string input = userInput.Text;
+
             string[] inputArray = input.Split(',', StringSplitOptions.RemoveEmptyEntries);
 
-            currentNumbers = inputArray.Select(int.Parse).ToArray();
+            if (inputArray.All(s => int.TryParse(s.Trim(), out _)))
+            {
+                currentNumbers = inputArray
+                    .Select(s => int.Parse(s.Trim()))
+                    .ToArray();
 
-            UpdateLabelOutput();
+                UpdateLabelOutput();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Podaj tylko liczby oddzielone przecinkami",
+                    "Zły Format Danych",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void RandomInputButton(object sender, EventArgs e)
         {
-            int amount = (int)numericUpDown1.Value;
+            int amount = (int)randomNumberCount.Value;
 
-            int minValue = 0;
-            int maxValue = 10000;
+            int minRand = 0;
+            int maxRand = 10000;
 
             currentNumbers = new int[amount];
             for (int i = 0; i < amount; i++)
             {
-                currentNumbers[i] = random.Next(minValue, maxValue);
+                currentNumbers[i] = random.Next(minRand, maxRand);
             }
 
             UpdateLabelOutput();
@@ -47,11 +61,11 @@ namespace WinFormsApp1
             int maxDisplay = 15;
             if (currentNumbers.Length <= maxDisplay)
             {
-                label2.Text = "Liczby: " + string.Join(", ", currentNumbers);
+                numberDisplay.Text = "Liczby: " + string.Join(", ", currentNumbers);
             }
             else
             {
-                label2.Text = "Liczby: " + string.Join(", ", currentNumbers.Take(maxDisplay)) + " ...";
+                numberDisplay.Text = "Liczby: " + string.Join(", ", currentNumbers.Take(maxDisplay)) + " ...";
             }
         }
 

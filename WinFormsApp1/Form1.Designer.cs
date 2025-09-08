@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label2 = new Label();
+            numberDisplay = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -36,20 +36,20 @@
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
-            numericUpDown1 = new NumericUpDown();
+            randomNumberCount = new NumericUpDown();
             userInput = new TextBox();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)randomNumberCount).BeginInit();
             SuspendLayout();
             // 
-            // label2
+            // numberDisplay
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(95, 256);
-            label2.Name = "label2";
-            label2.Size = new Size(253, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Inputted numbers will be shown here";
+            numberDisplay.AutoSize = true;
+            numberDisplay.Location = new Point(95, 256);
+            numberDisplay.Name = "numberDisplay";
+            numberDisplay.Size = new Size(253, 20);
+            numberDisplay.TabIndex = 1;
+            numberDisplay.Text = "Inputted numbers will be shown here";
             // 
             // button1
             // 
@@ -69,7 +69,7 @@
             button2.TabIndex = 3;
             button2.Text = "Randomize";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += RandomInputButton;
             // 
             // button3
             // 
@@ -121,12 +121,12 @@
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
-            // numericUpDown1
+            // randomNumberCount
             // 
-            numericUpDown1.Location = new Point(623, 62);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(150, 27);
-            numericUpDown1.TabIndex = 10;
+            randomNumberCount.Location = new Point(623, 62);
+            randomNumberCount.Name = "randomNumberCount";
+            randomNumberCount.Size = new Size(150, 27);
+            randomNumberCount.TabIndex = 10;
             // 
             // userInput
             // 
@@ -151,7 +151,7 @@
             ClientSize = new Size(1051, 597);
             Controls.Add(label1);
             Controls.Add(userInput);
-            Controls.Add(numericUpDown1);
+            Controls.Add(randomNumberCount);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -159,16 +159,16 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label2);
+            Controls.Add(numberDisplay);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)randomNumberCount).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label label2;
+        private Label numberDisplay;
         private Button button1;
         private Button button2;
         private Button button3;
@@ -176,7 +176,7 @@
         private Button button5;
         private Button button6;
         private Button button7;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown randomNumberCount;
         private TextBox userInput;
         private Label label1;
     }
